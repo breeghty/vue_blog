@@ -9,7 +9,9 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page">
+              <router-link to="/">Home</router-link>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -32,10 +34,9 @@
     </div>
   </nav>
 <!-- title -->
-  <div class="container mt-4">
-    <h3>소영의 Vue.js 공부 블로그입니다.</h3>
-    <p>using bootstrap5, vscode, Vue.js Framework</p>
-  </div>
+  
+  <router-link to="/">홈 페이지</router-link>
+  <router-link to="/list">리스트 페이지</router-link>
 
   <router-view :blogData="blogData"></router-view>
 <!-- card -->
